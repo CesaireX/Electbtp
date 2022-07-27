@@ -14,7 +14,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall": "ng build --target=production -e ${NODE_ENV:-production} --aot"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
